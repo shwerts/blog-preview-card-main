@@ -62,13 +62,14 @@ main {
 
 /* Blog card's heading */
 
-.blog-card h2 {
+.blog-card h1 {
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 950;
   width: fit-content;
 }
-.blog-card > a:focus h2,
-.blog-card > a:hover h2 {
+.blog-card > a:focus h1,
+.blog-card > a:hover h1 {
   color: var(--yellow);
   cursor: pointer;
 }
