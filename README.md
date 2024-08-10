@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./solution.jpg)
+![](./solution.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/shwerts/blog-preview-card-main)
-- Live Site URL: [Live Page (GitHub Pages)](https://your-live-site-url.com)
+- Live Site URL: [Live Page (GitHub Pages)](https://shwerts.github.io/blog-preview-card-main/)
 
 ## My process
 
