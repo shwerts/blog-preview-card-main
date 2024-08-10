@@ -94,7 +94,7 @@ main {
 
 /* Blog card's content */
 
-.blog-content {
+.blog-card p {
   margin-top: 12px;
   font-weight: 500;
   color: var(--gray-500);
