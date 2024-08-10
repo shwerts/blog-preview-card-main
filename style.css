@@ -1,1 +1,125 @@
+/* Global webpage style & Body */
 * {box-sizing: border-box;}
+:root {
+  --yellow: #F4D04E;
+  --gray-950: #111;
+  --gray-500: #6B6B6B;
+  font-family: Figtree;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main content; All blog cards */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 4em;
+  padding: 5em 0;
+}
+
+/* The blog card(s) */
+
+.blog-card {
+  width: 384px;
+  min-height: 522px;
+  background: #FFF;
+  border-radius: 20px;
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px 0 #000;
+  line-height: 150%;
+  font-weight: 500;
+}
+.blog-card a {
+  padding: 24px;
+  display: block;
+  text-decoration: none;
+  color: unset;
+}
+
+/* Blog card's header */
+
+.blog-card header {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
+}
+
+/* Blog card's image */
+
+.blog-image {
+  margin-bottom: 12px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+/* Blog card's heading */
+
+.blog-card h2 {
+  margin: 0;
+  font-weight: 950;
+  width: fit-content;
+}
+.blog-card > a:focus h2,
+.blog-card > a:hover h2 {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+/* Blog card's category list of tags */
+
+.list-tag {margin: 0; padding: 0;}
+.list-tag > * {
+  display: inline-block;
+  margin: 2px 0;
+  list-style: none;
+  max-height: inherit;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 950;
+}
+.learning-tag {background: var(--yellow);}
+
+/* Blog card's publish date */
+
+.blog-card .published {margin: 0;}
+
+/* Blog card's content */
+
+.blog-content {
+  margin-top: 12px;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+/* Blog card's author */
+
+.blog-card footer {
+  margin-top: 24px;
+  font-weight: 950;
+}
+.blog-card footer img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+@media (max-width: 768px) {
+  main {padding: 2em 0;}
+  .blog-card {
+    font-size: 14px;
+    width: min-content;
+  }
+  .blog-image {
+    width: 279px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
