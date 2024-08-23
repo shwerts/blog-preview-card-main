@@ -37,7 +37,7 @@ main {
   line-height: 150%;
   font-weight: 500;
 }
-.blog-card a {
+.blog-card > a {
   padding: 24px;
   display: block;
   text-decoration: none;
@@ -69,7 +69,7 @@ main {
   width: fit-content;
 }
 .blog-card > a:is(:hover, :focus) h1 {
-  color: hsl(218, 44%, 22%);
+  color: var(--yellow);
   cursor: pointer;
 }
 
