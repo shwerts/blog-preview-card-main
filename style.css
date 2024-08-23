@@ -68,9 +68,8 @@ main {
   font-weight: 950;
   width: fit-content;
 }
-.blog-card > a:focus h1,
-.blog-card > a:hover h1 {
-  color: var(--yellow);
+.blog-card > a:is(:hover, :focus) h1 {
+  color: hsl(218, 44%, 22%);
   cursor: pointer;
 }
 
